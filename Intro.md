@@ -207,6 +207,9 @@ Unity 是一个游戏引擎——帮你画 3D 画面、处理鼠标点击、播�
 
 
 ### 目录结构
+
+```
+
 Gomoku3D/
 ├── .gitignore                    # Unity + Python 忽略规则
 ├── .vscode/
@@ -238,3 +241,5 @@ Gomoku3D/
     ├── network/                  # 网络服务
     ├── tests/                    # 测试
     └── requirements.txt          # Python 依赖
+
+```
