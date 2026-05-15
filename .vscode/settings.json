@@ -1,0 +1,17 @@
+{
+  "editor.formatOnSave": true,
+  "files.exclude":
+  {
+    "client/Gomoku3D/Library": true,
+    "client/Gomoku3D/Temp": true,
+    "client/Gomoku3D/Obj": true,
+    "client/Gomoku3D/Builds": true,
+    "client/Gomoku3D/Logs": true
+  },
+  "files.associations":
+  {
+    "*.unity": "yaml",
+    "*.prefab": "yaml",
+    "*.mat": "yaml"
+  }
+}

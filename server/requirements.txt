@@ -1,0 +1,11 @@
+# Gomoku3D Python Backend Dependencies
+# Phase 2: AI opponent
+# Phase 3-4: Network server
+
+# Web framework for network server (Phase 3)
+# fastapi
+# uvicorn
+
+# AI / ML (Phase 2)
+# numpy
+# torch
