@@ -160,13 +160,13 @@ IDE = 写代码的软件，把"写代码 + 运行 + 报错提示"集成在一个
 
 ## 二、AI 编程助手
 
-VSCode 可以装 AI 插件。我们主要用 Claude Code，背后是三个概念：
+VSCode 可以装 AI 插件。我们主要用 Claude Code，背后是四个概念：
 
 **Model（模型）**：AI 的大脑。GPT、Claude、DeepSeek 都是模型。喂它文字就吐文字。
 
 **Prompt**：提示词，问的简单，AI答得泛面，问的具体，AI答得具体。核心是个人提炼信息，清晰的表达能力。
 
-**Agent（智能体）**：模型 + 能操作电脑的工具。光聊天不够——Agent 能读代码、改文件、在终端跑编译。Claude Code、Cursor、GitHub Copilot 都是 Agent。ycccuc电脑上配好了。
+**Agent（智能体）**：模型 + 能操作电脑的工具。光聊天不够——Agent 能读代码、改文件、在终端跑编译。Claude Code、Cursor、GitHub Copilot、codex 都是 Agent。
 
 **Skill（技能）**：Agent 的预装工作流程。比如 `/grill-me` 就是一整套方案审问流程。队长接入了 Matt Pocock 开源的一套 Skill（github.com/mattpocock/skills），队员不需要配。
 
