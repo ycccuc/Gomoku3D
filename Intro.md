@@ -82,6 +82,9 @@ VSCode 左边栏有个**源代码管理**按钮，快捷键 `Ctrl+Shift+G`。你
 
 > 队长建仓库加人 → 所有人 clone → 改代码 → commit → 同步。全程 VSCode 里完成。
 
+下面有一个协作开发视频可以看一下：
+【和傻子一起写代码】 https://www.bilibili.com/video/BV1udEuzrEa7/?share_source=copy_web&vd_source=10b34eedb03cdd37052d6deba3516864
+
 ### 5. GitHub Issues：任务分配看板
 
 我们把每个阶段拆成子任务，挂在 GitHub 的 Issues 标签下。比如第一阶段拆出 14 个子任务（棋盘模型、棋子 Prefab、落子逻辑……），每个 Issue 标题写清楚做什么，assign 给当轮负责的人，完成就 close。
