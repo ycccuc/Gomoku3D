@@ -115,13 +115,11 @@ VSCode 可以装 AI 插件。我们主要用 Claude Code，背后是三个概念
 
 **Skill（技能）**：Agent 的预装工作流程。比如 `/grill-me` 就是一整套方案审问流程。队长接入了 Matt Pocock 开源的一套 Skill（github.com/mattpocock/skills），队员不需要配。
 
-```
 **浅谈在VScode里配置deepseek(也可以选择其他ai模型)**
 【在VScode中使用Claude Code agent并配置DeepSeek v4 model【闲谈】】 https://www.bilibili.com/video/BV1ia9UBPESQ/?share_source=copy_web&vd_source=10b34eedb03cdd37052d6deba3516864
 
 **好用的skill**
 【为了不让AI瞎写代码，大神程序员把自己蒸馏了！GitHub星标6万+】 https://www.bilibili.com/video/BV1UpR9BBEf5/?share_source=copy_web&vd_source=10b34eedb03cdd37052d6deba3516864
-```
 
 ---
 
