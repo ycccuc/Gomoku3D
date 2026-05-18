@@ -39,7 +39,7 @@
 - 逻辑层：把落子记录到本地棋盘数组 `board[7][7] = BLACK`，检查玩家是否连五获胜
 - 还没赢 → [前端](#g-frontend)把棋盘状态打包成 [JSON](#g-json)：`{"board": [...],"last_move":{"r":7,"c":7},"mode":"pvp_ai","strategy":"mcts"}`
 
-<a id="from-json"></a><a id="from-websocket"></a>
+<a id="from-json"></a><a id="from-websocket"></a><a id="from-api"></a>
 
 **第二步：数据通过网络传到[后端](#g-backend)**
 
@@ -54,6 +54,8 @@
 [Python](#g-python) 把结果打包成 [JSON](#g-json)：`{"ai_move":{"r":8,"c":8},"score":5000,"candidates":[...],"time_ms":3420}`
 
 [Unity](#g-unity) 收到后：在 (8,8) 渲染白子 → 更新本地棋盘 → 显示"AI 思考用时 3.4s" → 轮到你下。
+
+> 上面这三步里，前后端之间传的 JSON 消息有固定格式——哪些字段、什么类型、谁发谁收。这套约定就是我们的 **[API](#g-api)**（应用程序接口）。你可以把它理解为"前后端对话的语言规则"：前端说 `{"board":..., "last_move":...}`，后端听懂、算完、回一句 `{"ai_move":...}`。谁不按约定来，对方就听不懂。
 
 **三种对战模式的区别**：
 
@@ -480,6 +482,30 @@ Gomoku3D/
 > 类比：HTTP 是写信——寄一封等回信，过程慢。WebSocket 是打电话——接通后随时说随时听。
 
 [↩ 返回](#from-websocket)
+
+---
+
+### <a id="g-api"></a>API
+
+应用程序接口（Application Programming Interface）。两段程序之间"对话"的约定规则——A 发什么格式的数据给 B，B 回什么格式给 A，双方事先说好、照章办事。
+
+在我们的项目里：前后端之间传的 [JSON](#g-json) 消息格式就是 API。比如前端必须发：
+
+```json
+{"board": [[0,0,1,...]], "last_move": {"r":7,"c":7}, "mode": "pvp_ai"}
+```
+
+后端收到后必须回：
+
+```json
+{"ai_move": {"r":8,"c":8}, "score": 5000, "time_ms": 3420}
+```
+
+谁不按这个格式来，对方就报错。这就是 API 的核心——**约定好了，照格式来**。
+
+> 类比：API 是餐厅的点菜单。你按菜单格式写"红烧肉×1"，后厨就做红烧肉。你写"给我来盘好吃的"，后厨不知道你要啥。
+
+[↩ 返回](#from-api)
 
 ---
 
