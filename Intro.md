@@ -505,7 +505,7 @@ Gomoku3D/
 
 ### <a id="g-ide"></a>IDE
 
-集成开发环境（Integrated Development Environment）。把"写代码 + 自动补全 + 运行 + 调试 + 报错提示"集成在一个窗口的软件。就像 Word 写文档、PS 修图，IDE 专门用来写代码。
+集成开发环境（Integrated Development Environment）。把"代码编辑 + 自动补全 + 运行 + 调试器 + 报错提示 + 图形用户界面等等"集成在一个窗口的软件。就像 Word 写文档、PS 修图，IDE 专门用来写代码。
 
 [↩ 返回](#from-ide)
 
